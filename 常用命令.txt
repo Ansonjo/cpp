@@ -1,0 +1,22 @@
+git config --global user.name=***  "配置全局" 
+git config --list "查看全局配置"
+git init 	"创建版本库"
+git status 	"查看仓库当前状态"
+git diff +膄ileName	"查看原来和现在的差别"
+git add	+ fileName	"把修改过的文件添加到暂存区中"
+git rm + fileName
+git log 	"查看最近到最远的提交日志"  --pretty=oneline "单行显示"
+git commit -m   "提交新版本"
+git commit --amend "修改最近提交的标签内容"
+git reset --hard HEAD~n  "回到第几个版本"
+git reset --hard HEAD^   "回到上一个版本"
+git reset --hard commitId "回到指定id版本"
+git checkout -- fileName "丢弃工作区的修改"
+git reset HEAD fileName "把暂存区的修改撤销掉"
+git reflog 	"查看你命令历史,找到最新的id"
+ssh-keygen -t rsa -C "youremail@example.com "生成ssh密钥,用连接远程仓库的"
+git remote add 远程库名 git@github.com:userName/learngit.git "设置远程库的名字,一般为origin"
+git push -u origin master "把master分支内容推送到远程的master分支,并且把本地master和远程master进行关联,-u 起到关联两个分支的作用"
+git pull git@github.com:michaelliao/learngit.git "把远程的东西拉下来"
+git clone + 远程仓库地址 克隆一个仓库
+
