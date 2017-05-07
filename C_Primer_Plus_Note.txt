@@ -1,0 +1,85 @@
+一.语法基础
+1.c++区分大小写
+2.对于声明变量,C++的做法是尽可能在首次使用变量前声明它
+3. int a; int是类,a是对象
+4.cout是ostream类的对象
+5.cin是istream类的对象
+6.特色重定义运算符
+7.在unix遇到使用<cmath>库时,编译报错,则命令行使用-lm结尾即可
+8.fx()=fx(void)
+9.让程序能够访问名字空间std的方法有很多种,下面是其中的4种 :
+	1)将using namespace std; 放在函数定义之前,让文件中所有的函数都能够使用名字空间std中所有的元素
+	2)将using namespace std; 放在特定的函数定义中,让该函数能够使用名字空间std中的素有元素
+	3)在特定函数中使用类似 using std:: cout;这样的编译指令,让该函数使用指定的元素
+	4)完全不使用编译指令using,而在需要使用名字空间std中的元素时,使用前缀std:: , 如std::cout
+	
+二.处理数据
+1.unsigned long       
+2.long
+3.unsigned int
+4.int
+5.unsigned short
+6.short
+7.char
+8.unsigned char
+9. signed char
+10.bool
+11.unsigned long long
+12.long long
+13.float
+14.double
+15.long double
+
+1.变量名的命名规则,重点两点: 1) 区分大小写 2)不要以双下划线或者单下划线加大写字母打头 3)全局变量用单下划线打头
+2.命名变量时,通常变量名加前缀 , 如 int(表示整型)、str或sz（表示以空字符结束的字符串）、b（表示布尔值）、p（表示指针）、c（表示单个字符）
+3. 术语宽度 ： 用于描述存储整数时使用的内存量
+4.c++为整型各类型提供了一种灵活的标准，它确保了最小宽度：
+ 1）short 至少16位
+ 2）int至少与short一样长
+ 3）long至少32位，且至少与int一样长
+ 4）long long至少64位，且至少与long一样长
+ 在移植的时候就需要特别注意了
+ 5.sizeof运算符可以返回类型或者变量的长度
+ 6.头文件climits中包含了关于整型限制的信息，如INT_MAX为int的最大值，CHAR_BIT为字节的位数
+ 7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
