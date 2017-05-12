@@ -1,12 +1,12 @@
-edit: limits.o
-	g++ limits.o  -o limits
+edit: test.o
+	g++ test.o  -o test
 	rm *.o
-	mv limits.exe ../ExeFile
-	../ExeFile/limits.exe
-limits.o : limits.cpp
-	g++ -c limits.cpp 
+	mv test.exe ../ExeFile
+	../ExeFile/test.exe
+test.o : test.cpp
+	g++ -c test.cpp 
 
 clean:
 	rm *.o
 move:
-	mv limits.exe ../ExeFile
+	mv test.exe ../ExeFile
