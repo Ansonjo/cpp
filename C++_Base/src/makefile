@@ -1,12 +1,11 @@
-edit: test.o
-	g++ test.o  -o test
+edit: bool.o
+	g++ bool.o  -o bool
 	rm *.o
-	mv test.exe ../ExeFile
-	../ExeFile/test.exe
-test.o : test.cpp
-	g++ -c test.cpp 
-
+	mv bool.exe ../ExeFile
+	../ExeFile/bool.exe
+bool.o : bool.cpp
+	g++ -c bool.cpp 
 clean:
 	rm *.o
 move:
-	mv test.exe ../ExeFile
+	mv bool.exe ../ExeFile
