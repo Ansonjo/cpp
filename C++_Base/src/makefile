@@ -1,11 +1,11 @@
-edit: bool.o
-	g++ bool.o  -o bool
+edit: floatadd.o
+	g++ floatadd.o  -o floatadd
 	rm *.o
-	mv bool.exe ../ExeFile
-	../ExeFile/bool.exe
-bool.o : bool.cpp
-	g++ -c bool.cpp 
+	mv floatadd.exe ../ExeFile
+	../ExeFile/floatadd.exe
+floatadd.o : floatadd.cpp
+	g++ -c floatadd.cpp 
 clean:
 	rm *.o
 move:
-	mv bool.exe ../ExeFile
+	mv floatadd.exe ../ExeFile
