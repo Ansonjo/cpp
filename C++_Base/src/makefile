@@ -1,11 +1,11 @@
-edit: floatadd.o
-	g++ floatadd.o  -o floatadd
+edit: init.o
+	g++ init.o  -o init
 	rm *.o
-	mv floatadd.exe ../ExeFile
-	../ExeFile/floatadd.exe
-floatadd.o : floatadd.cpp
-	g++ -c floatadd.cpp 
+	mv init.exe ../ExeFile
+	../ExeFile/init.exe
+init.o : init.cpp
+	g++ -c init.cpp 
 clean:
 	rm *.o
 move:
-	mv floatadd.exe ../ExeFile
+	mv init.exe ../ExeFile
