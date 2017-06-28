@@ -1,4 +1,4 @@
-//  -- 
+// function template -- 需要在函数定义的上一行加上模板头
 #include <iostream>
 #include <string>
 using namespace std;

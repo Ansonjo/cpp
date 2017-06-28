@@ -1,11 +1,11 @@
-edit: template_class.o
-	g++ template_class.o  -o template_class
+edit: template_function.o
+	g++ template_function.o  -o template_function
 	rm *.o
-	mv template_class.exe ../ExeFile
-	../ExeFile/template_class.exe
-template_class.o : template_class.cpp
-	g++ -c template_class.cpp 
+	mv template_function.exe ../ExeFile
+	../ExeFile/template_function.exe
+template_function.o : template_function.cpp
+	g++ -c template_function.cpp 
 clean:
 	rm *.o
 move:
-	mv template_class.exe ../ExeFile
+	mv template_function.exe ../ExeFile

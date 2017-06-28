@@ -1,3 +1,4 @@
+// c++ 独有的初始化的方式
 #include <iostream>
 using namespace std;
 
