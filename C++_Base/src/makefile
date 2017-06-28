@@ -1,11 +1,11 @@
-edit: init.o
-	g++ init.o  -o init
+edit: template_class.o
+	g++ template_class.o  -o template_class
 	rm *.o
-	mv init.exe ../ExeFile
-	../ExeFile/init.exe
-init.o : init.cpp
-	g++ -c init.cpp 
+	mv template_class.exe ../ExeFile
+	../ExeFile/template_class.exe
+template_class.o : template_class.cpp
+	g++ -c template_class.cpp 
 clean:
 	rm *.o
 move:
-	mv init.exe ../ExeFile
+	mv template_class.exe ../ExeFile
