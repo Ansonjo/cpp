@@ -1,0 +1,59 @@
+学习Qt的方法
+1.首先要掌握C++语言
+2.对图形操作界面的部件有直观的认识
+3.学会查找文档
+4.多多使用官方提供的实例代码
+5.注意书写代码的格式规则(匈牙利和驼峰)
+6.阅读API源码
+
+学习FairyGUI的方法
+1.首先要掌握TS和JS语言
+2.对图形操作界面的部件有直观的认识
+3.学会查找文档,通过demo测试API的用处
+4.多多使用官方提供的实例代码
+5.多看demo,运行demo
+6.注意书写代码的格式规则(驼峰)
+7.阅读API源码
+
+QObject是QT基类
+widget = windows-get      获得窗口
+Qt的20%的类会被80%的使用到
+
+QTabWidget
+QLabel
+QTextEdit      多行文本编辑器
+QLineEdit 		单行文本编辑器
+QPushButton
+QGroupBox   组合框
+<a href="http://www.huiwen.com"> 什么是系统保护</a> 超文本标签     类似计算机属性中系统保护标签里蓝色的什么是系统保护
+QTableWidget     表格部件
+QCheckButton
+QRadioButton
+QHBoxLayout      	水平居中
+QVBoxLayout			左右居中
+弹簧就相当于上对齐下对齐左对齐右对齐
+QCheckBox
+
+
+在Qt  designer 中
+快捷键
+ctrl + L  垂直布局
+
+事件驱动异步
+c++异步的方法有
+1. 原始的回调,高耦合
+2.消息映射
+3.信号与槽(类似事件驱动实现的异步),信号就是事件,槽是监听器
+
+在编辑器中F3和F4是图形编辑和信号与槽编辑的切换快捷键
+预览shift+alt+r
+运行ctrl+r
+meta-object 	system    	元对象系统
+meta-object  	complier	元对象编译器
+Q_OBJECT告诉cpu需要使用元对象编译器,完成信号和槽
+
+
+QComboBox     Qlist
+item  项
+uic  + 名字.ui >> ui_名字.h  把图形文件转成c++文件  更新图形界面里会用到, 用qtSDK终端打开
+
