@@ -1,11 +1,11 @@
-edit: template_array171009.o
-	g++ template_array171009.o  -o template_array171009
+edit: showBits.o
+	g++ showBits.o  -o showBits
 	rm *.o
-	mv template_array171009.exe ../ExeFile
-	../ExeFile/template_array171009.exe
-template_array171009.o : template_array171009.cpp
-	g++ -c template_array171009.cpp 
+	mv showBits.exe ../ExeFile
+	../ExeFile/showBits.exe
+showBits.o : showBits.cpp
+	g++ -c showBits.cpp 
 clean:
 	rm *.o
 move:
-	mv template_array171009.exe ../ExeFile
+	mv showBits.exe ../ExeFile

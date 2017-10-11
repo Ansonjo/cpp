@@ -1,4 +1,4 @@
-// special tempalate -- 某个模版的特殊化
+// special template -- 某个函数模版的特殊化
 #include <iostream>
 #include <cstring>
 using namespace std;
