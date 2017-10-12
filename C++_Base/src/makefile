@@ -1,11 +1,11 @@
-edit: showBits.o
-	g++ showBits.o  -o showBits
+edit: showBits2.o
+	g++ showBits2.o  -o showBits2
 	rm *.o
-	mv showBits.exe ../ExeFile
-	../ExeFile/showBits.exe
-showBits.o : showBits.cpp
-	g++ -c showBits.cpp 
+	mv showBits2.exe ../ExeFile
+	../ExeFile/showBits2.exe
+showBits2.o : showBits2.cpp
+	g++ -c showBits2.cpp 
 clean:
 	rm *.o
 move:
-	mv showBits.exe ../ExeFile
+	mv showBits2.exe ../ExeFile
