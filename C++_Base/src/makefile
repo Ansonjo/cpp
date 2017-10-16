@@ -1,11 +1,11 @@
-edit: showBits2.o
-	g++ showBits2.o  -o showBits2
+edit: union.o
+	g++ union.o  -o union
 	rm *.o
-	mv showBits2.exe ../ExeFile
-	../ExeFile/showBits2.exe
-showBits2.o : showBits2.cpp
-	g++ -c showBits2.cpp 
+	mv union.exe ../ExeFile
+	../ExeFile/union.exe
+union.o : union.cpp
+	g++ -c union.cpp 
 clean:
 	rm *.o
 move:
-	mv showBits2.exe ../ExeFile
+	mv union.exe ../ExeFile
