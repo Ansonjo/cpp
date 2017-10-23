@@ -1,11 +1,11 @@
-edit: union.o
-	g++ union.o  -o union
+edit: person.o
+	g++ person.o  -o person
 	rm *.o
-	mv union.exe ../ExeFile
-	../ExeFile/union.exe
-union.o : union.cpp
-	g++ -c union.cpp 
+	mv person.exe ../ExeFile
+	../ExeFile/person.exe
+person.o : person.cpp
+	g++ -c person.cpp person.h
 clean:
-	rm *.o
+	rm *.gch 
 move:
-	mv union.exe ../ExeFile
+	mv person.exe ../ExeFile
