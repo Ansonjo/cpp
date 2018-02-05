@@ -1,0 +1,17 @@
+Windows进程
+	进程是一个容器,包含程序执行需要的代码、数据、资源等等信息。Windows是多任务操作系统，可以同时执行多个进程。
+	
+注意:      进程开启意味着分配内存,而主线程运行才意味着程序运行,进程与内存有关,线程与cpu有关
+
+Windows进程的特点
+	1）每个进程都有自己的ID号
+	2）每个进程都有自己的地址空间，进程之间无法访问对方的地址空间,比如进程间通信
+	3）每个进程都有自己的安全属性
+	4）每个进程当中至少包含一个线程
+
+进程环境信息(进程上下文)配置操作系统环境
+    获取和释放环境信息
+	获取
+	LPVOID GetEnvironmentStrings(VOID);
+	释放
+	BOOL FreeEnvironmentStrings(LPSTR  lpszEnvironmentBlock/*environment strings*/);
