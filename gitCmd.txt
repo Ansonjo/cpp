@@ -1,5 +1,6 @@
 ﻿git config --global user.name=***  "配置全局" 
 git config --list "查看全局配置"
+git config --global credential.helper store "会保存密码,下次操作远程库就无须输入密码了"
 git init 	"创建版本库"
 git status 	"查看仓库当前状态"
 git diff +fileName	"查看原来和现在的差别"
